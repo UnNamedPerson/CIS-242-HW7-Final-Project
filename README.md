@@ -2,9 +2,7 @@
 
 # TOKOPANDAI PROJECT
 
-# Abdullah Alsayari,
-# Matthew Taruno,
-# Akira Ranjan Sah
+# Abdullah Alsayari,  Matthew Taruno, and Akira Ranjan Sah
 
 # Project Overview:
 For this project, we chose to apply the machine learning techniques learned in class to data from a startup called Toko Pandai, based in Indonesia, which literally means “Smart Store.”
