@@ -1,13 +1,12 @@
 # CIS-242-HW7-Final-Project
 
-TOKOPANDAI PROJECT
+# TOKOPANDAI PROJECT
 
-Abdullah Alsayari
-Matthew Taruno
-Akira Ranjan Sah
+# Abdullah Alsayari,
+# Matthew Taruno,
+# Akira Ranjan Sah
 
-Project Overview:
-
+# Project Overview:
 For this project, we chose to apply the machine learning techniques learned in class to data from a startup called Toko Pandai, based in Indonesia, which literally means “Smart Store.”
 
 57.4% of Indonesia’s GDP is from the private consumption market. In this private consumption market, there are two types of stores: traditional stores (Indonesia has 3.4 million traditional trade stores) and opposed to corporation-owned trade stores (Indonesia has 36000 corporate-owned stores). Traditional stores are stored owned by typically poorer individuals who live in smaller villages, they are not corporate owned. So these traditional stores are the stores that TokoPandai aims to give power towards and help, so that they may be able to fight and compete against the more systematic, dominant presence of modern trade stores.
@@ -18,7 +17,7 @@ What is this aforementioned problem for this distributor that we aim to solve? T
 
 The data we have was initially given in the form of an SQL database. Then from this large SQL database (which was quite troublesome to navigate and execute the script because it had multiple tables). Which leads to our data processing and exploration stage, which for a this final project, is pivotal to both the accuracy of our predictions, and the motivating ideas.
 
-Data Processing:
+# Data Processing:
 Our data included many tables: the respective names include distributors, users (shop owners), invoices, and transactions. Each of the tables we had included many features including amount, prices, outlet and distributors’ id, and quantity, with a total of like. Into our model since using that many features can cause the model to overfit. Therefore, we decided on selecting reasonable number of features, and ones that would include many and relevant data to our the output value. 
 
 The first step of this process was getting the data cleaned, this was probably the hardest and most time consuming part of the project. We had a lot of columns to look at, and before we can decide on which columns we wanted as (X) and which one we wanted as our (y), we needed to check if the columns or input features that we chose had a sufficient amount of clean data to back it up. We started this process of data cleaning by writing down every column in each of the tables we had. Each column that was empty or nearly empty was removed from our column list. Next, we had to decide on our (y) column to know which features were relevant to our model. At first we wanted to predict (y) as the probability of risk for banks to loan store owners money. The problem with this output value was that we lacked in demographic data and also training data giving of this actual (y) value - in other words, we have no previous historical data for how stores are loaned money because the startup only plans to roll out the loaning in the near future. 
@@ -50,8 +49,7 @@ The categorical data we had was another reason as to why we chose Random Forest.
 
 We have also tried using linear regression algorithm to create our model. However, after looking at our plots, it seemed that the relationship between the the features and the output were not linear, so that is another reason why we preferred random forest.
 
-UI Design: 
-
+# UI Design: 
 For UI design of the project, we mainly used ipywidgets package and imported several tools from it that helped us make the final representation and looks for the project. We used different tools such as Text fields, Sliders, and box layout to allow labels to be set next to the widget element itself. We used several Text fields to take most of the features as inputs, and we used one slider to handle the DPD (Day Past Due) feature. 
 
 We added a button that, upon clicking, the values in the text field and slider widgets will be placed for input variables. The input variables are then passed down as parameters and are included as part of the (X) features. The model will use the features to generate the (y) value, difference, which will be presented on the difference label as the result of the prediction value.
